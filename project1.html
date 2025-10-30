@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 | All About Me</title>
+    <!-- Load Tailwind CSS from CDN for consistent styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header (Same as index.html for consistent navigation) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-2xl font-bold text-indigo-600 tracking-wider" aria-label="Home">
+                    18224117
+                </a>
+                <nav class="hidden md:flex space-x-4 lg:space-x-8" role="navigation" aria-label="Main Navigation">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 p-2 rounded-lg">Home</a>
+                    <a href="index.html#projects" class="text-gray-600 hover:text-indigo-600 transition duration-150 p-2 rounded-lg">Projects</a>
+                    <a href="index.html#about" class="text-gray-600 hover:text-indigo-600 transition duration-150 p-2 rounded-lg">About Me</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-150">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content for Project -->
+    <main class="py-12 md:py-20" role="main">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl bg-white p-8 md:p-12 rounded-xl shadow-xl">
+            
+            <a href="index.html#projects" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium mb-6 transition">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Projects
+            </a>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                Project 1: All About Me
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 border-b pb-4">
+                Memperkenalkan sosok diri sendiri kepada orang lain / pihak lain.
+            </p>
+
+            <!-- Video Section -->
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Me, Myself, and I</h2>
+            
+            <div class="mb-10 aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                <!-- 
+                    IMPORTANT: To make this work, you must upload your video file (e.g., 'about_me_video.mp4')
+                    to your repository and update the 'src' path below.
+                -->
+                <img src="assets/me_myself_and_i.jpg"
+                     alt="A portrait of Stephanie Mae" 
+                    class="w-full h-auto object-cover rounded-lg">
+            </img>
+            </div>
+            
+            <!-- Analysis/Description Section -->
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Key Insights & Reflection</h2>
+            <div class="space-y-6 text-gray-700 text-lg">
+                <p>
+                    Tujuan dari proyek ini adalah untuk menerapkan keterampilan komunikasi interpersonal dan publik dengan cara yang autentik. Ini melibatkan pemilihan informasi yang relevan dan menyajikannya secara menarik untuk audiens yang beragam.
+                </p>
+                <h3 class="text-xl font-semibold text-gray-800 pt-3">Komunikasi Interpersonal (Diri Sendiri)</h3>
+                <p>
+                    Saya berfokus pada kejelasan identitas dan tujuan saya. Refleksi ini membantu saya memahami bagaimana persepsi diri memengaruhi cara saya berinteraksi dengan orang lain. Penggunaan bahasa yang ramah dimaksudkan untuk membangun koneksi yang kuat.
+                </p>
+                <h3 class="text-xl font-semibold text-gray-800 pt-3">Teknik Komunikasi Publik</h3>
+                <ul class="list-disc list-inside space-y-2 pl-4">
+                    <li>**Kontak Mata (Eye Contact):** Mempertahankan kontak mata dengan kamera untuk membangun kredibilitas.</li>
+                    <li>**Bahasa Tubuh (Body Language):** Menggunakan gestur terbuka dan ekspresi wajah yang positif untuk menunjukkan kepercayaan diri.</li>
+                    <li>**Vokal:** Mengatur nada suara (pitch) dan kecepatan bicara (pace) agar pesan mudah dipahami oleh semua audiens.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer - Simplified for Project Page, linking back to main footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center" role="contentinfo">
+        <p class="text-sm text-gray-400">&copy; 2024 Stephanie Mae. All rights reserved. | <a href="index.html#contact" class="text-indigo-400 hover:text-indigo-300">Contact</a></p>
+    </footer>
+</body>
+</html>
