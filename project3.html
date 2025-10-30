@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 | My Stories For You</title>
+    <!-- Common header setup (Tailwind, Font, Styles) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header (Consistent Navigation) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-2xl font-bold text-indigo-600 tracking-wider">18224117</a>
+                <nav class="hidden md:flex space-x-4 lg:space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition p-2 rounded-lg">Home</a>
+                    <a href="index.html#projects" class="text-gray-600 hover:text-indigo-600 transition p-2 rounded-lg">Projects</a>
+                    <a href="index.html#about" class="text-gray-600 hover:text-indigo-600 transition p-2 rounded-lg">About Me</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Specific Content -->
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl bg-white p-8 md:p-12 rounded-xl shadow-xl">
+            
+            <a href="index.html#projects" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium mb-6">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Projects
+            </a>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                Project 3: My Stories For You
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 border-b pb-4">
+                Sebuah kisah inspiratif dan menarik yang ingin dibagikan dengan orang lain.
+            </p>
+
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">The Story</h2>
+            
+            <div class="space-y-6 text-gray-700 text-lg">
+                <p>
+                    [Insert your inspirational story text here.]
+                </p>
+                <p>
+                    [Use this section to discuss the narrative structure, the communication goal (e.g., to inspire, to teach a lesson), and the intended emotional response from the reader/viewer.]
+                </p>
+                <!-- Optional: Add an image or graphic related to the story -->
+                <img src="https://placehold.co/800x400/D1D5DB/4B5563?text=Story+Illustration" alt="Illustration representing the core theme of the story" class="rounded-lg shadow-md w-full h-auto">
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <p class="text-sm text-gray-400">&copy; 2024 Stephanie Mae. All rights reserved.</p>
+    </footer>
+</body>
+</html>
