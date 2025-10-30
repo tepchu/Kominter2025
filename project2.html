@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2 | Song For You</title>
-    <!-- Common header setup (Tailwind, Font, Styles) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -12,11 +11,13 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7fafc;
         }
+        .aspect-w-16 { --tw-aspect-w: 16; }
+        .aspect-h-9 { --tw-aspect-h: 9; }
+        .aspect-w-16 { padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header (Consistent Navigation) -->
     <header class="bg-white shadow-md sticky top-0 z-10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -49,18 +50,53 @@
 
             <h2 class="text-3xl font-bold text-gray-800 mb-6">Content / Video Pesan</h2>
             
-            <!-- INSERT VIDEO/AUDIO CODE HERE -->
-            <div class="mb-10 p-6 bg-gray-100 rounded-lg">
-                <p class="text-gray-600">**Space for your Audio/Video message.** Remember to upload your file to the repository and use the `src` attribute!</p>
-                <video controls class="w-full h-auto mt-4 rounded-lg">
-                    <source src="assets/song_for_you_message.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="mb-10 relative aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden shadow-lg">
+                <iframe width="914" 
+                height="514" 
+                src="https://www.youtube.com/embed/WvklCn1h9B0?list=RDWvklCn1h9B0" 
+                title="Jaymes Young - Stone [Official Audio]" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
             
             <!-- Reflection/Details -->
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">Refleksi dan Analisis Pesan</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Refleksi dan Interpretasi Lagu</h2>
             <div class="space-y-6 text-gray-700 text-lg">
+                <p>
+                    Lagu ini menceritakan mengenai bagaimana seseorang rela mengorbankan dirinya untuk menjadi sumber kekuatan orang lain, meskipun dirinya juga sedang mengalami kesulitan.
+                    Lirik lagu "if you’re looking for solid ground, a stone will never break" mendeskripsikan bahwa menjadi "stone" atau batu (menjadi kokoh) dapat menolong orang yang membutuhkan dukungan tersebut.
+                </p>
+                <p>
+                    so give me all your pain
+                    and love will set you free
+                    give me all your shame
+                    put all your weight on me
+                    and i’ll be the stone that you need me to be
+                </p>
+                <p>
+                    Paragraf ini menggambarkan janji dan pengorbanan. Menanggung luka dan rasa malu orang yang dicintai agar mereka dapat "sembuh" dan bebas dari penderitaan mereka. 
+                    Agar mereka dapat berjalan, berdiri, tersenyum, tanpa merasa terbebani lagi oleh yang telah lewat. Dunia bisa membakar dan menghancurkan, akan tetapi, sebuah "batu yang kokoh" akan menjadi tempat berpijak yang tidak goya, tidak runtuh — “a stone will never break.”
+                </p>
+                <p>
+                    [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
+                </p>
+                <p>
+                    [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
+                </p>
+                <p>
+                    [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
+                </p>
+                <p>
+                    [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
+                </p>
+                <p>
+                    [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
+                </p>
+                <p>
+                    [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
+                </p>
                 <p>
                     [Insert the detailed analysis of your message here, covering elements like non-verbal communication, emotional tone, and intent.]
                 </p>
