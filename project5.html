@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 | My Personal Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        /* Custom style for the score tables */
+        .score-table th, .score-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .score-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-2xl font-bold text-indigo-600 tracking-wider">18224117</a>
+                <nav class="hidden md:flex space-x-4 lg:space-x-8" role="navigation" aria-label="Main Navigation">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Home</a>
+                    <a href="project1.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">UTS-1</a>
+                    <a href="project2.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">UTS-2</a>
+                    <a href="project3.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">UTS-3</a>
+                    <a href="project4.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">UTS-4</a>
+                    <a href="project5.html" class="text-indigo-600 font-semibold border-b-2 border-indigo-600 transition duration-150">UTS-5</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-600 hover:bg-gray-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="project1.html" class="text-gray-600 hover:bg-gray-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">UTS-1</a>
+                <a href="project2.html" class="text-gray-600 hover:bg-gray-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">UTS-2</a>
+                <a href="project3.html" class="text-gray-600 hover:bg-gray-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">UTS-3</a>
+                <a href="project4.html" class="text-gray-600 hover:bg-gray-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">UTS-4</a>
+                <a href="project5.html" class="text-indigo-600 bg-indigo-50 block px-3 py-2 rounded-md text-base font-medium">UTS-5</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20" role="main">
+        <div class="max-w-4xl mx-auto">
+            
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8">
+                My Personal Reviews: Self-Assessment Portofolio
+            </h1>
+
+            <div class="space-y-10">
+
+                <section>
+                    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Identifikasi</h2>
+                    <div class="space-y-2 text-gray-700 text-lg leading-relaxed">
+                        <p><strong>Nama & NIM penulis:</strong> Stephanie Mae – 18224117 (NIM placeholder)</p>
+                        <p><strong>Penilai:</strong> Self-assessment (Stephanie Mae, via Gemini)</p>
+                        <p><strong>Catatan cakupan:</strong> Halaman beranda memuat "UTS-1 All About Me"; navigasi ke "My Songs for You", "My Stories for You", "My SHAPE", dan "My Personal Reviews" tersedia.</p>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Metode Review</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cara saya melakukan review: menggunakan Gemini untuk merefleksikan tiap tugas. Saya meng-attach file *prompt* Gemini, disertai perintah:
+                    </p>
+                    <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 my-4 bg-gray-100 italic text-gray-700 text-base">
+                        Perintah yang digunakan: self-assess UTS-1 sampai UTS-5 berdasarkan isi situs yang saya sediakan (portofolio pribadi). Gemini melakukan self-assessment UTS-1 s.d. UTS-5 langsung dari laman yang saya berikan dan menilai memakai rubrik tugas UTS (skala 1–5 per kriteria).
+                    </blockquote>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Tinjauan Umum</h2>
+                    
+                    <div class="space-y-4 text-gray-700 text-lg leading-relaxed">
+                        <h3 class="text-xl font-semibold text-gray-800">UTS-1 (All About Me)</h3>
+                        <p>berisi narasi yang sangat otentik dan terstruktur baik. Cerita "plot-twist" tentang pemilihan jurusan ITB menunjukkan kejujuran reflektif. Bagian "Pertemanan Saya" memperkuat persona yang ramah dan terbuka.</p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 pt-3">UTS-2 (My Songs for You)</h3>
+                        <p>adalah sebuah karya sastra (puisi/prosa) yang mendalam. Menggunakan metafora "batu di tepi pantai" untuk merefleksikan cinta, kehilangan, dan ketahanan dalam diam. Sangat orisinal dan puitis.</p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 pt-3">UTS-3 (My Stories for You)</h3>
+                        <p>adalah inti dari identitas naratif. Cerita berfokus pada pengalaman formatif (kehilangan Ayah dan anggota keluarga) dan bagaimana hal itu membentuk ketabahan, kedewasaan, serta prinsip "Everything happens for a reason".</p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 pt-3">UTS-4 (My SHAPE)</h3>
+                        <p>adalah analisis diri yang paling komprehensif. Tidak hanya mencakup 5 dimensi SHAPE, tetapi juga "Pernyataan Misi Pribadi", "Sintesis Diri", dan "Identitas Naratif" yang menunjukkan pemahaman diri yang luar biasa mendalam.</p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 pt-3">UTS-5 (My Personal Reviews)</h3>
+                        <p>(Halaman ini) mendokumentasikan proses self-assessment yang sistematis menggunakan AI (Gemini) untuk mengevaluasi semua karya secara objektif berdasarkan rubrik yang ada.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Tinjauan Spesifik & Skor (Skala 1–5)</h2>
+                    
+                    <div class="space-y-8">
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-indigo-600 mb-4">UTS-1 — All About Me</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full score-table">
+                                    <thead><tr><th>Kriteria</th><th>Skor (Maks. 5)</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Orisinalitas</td><td>5</td></tr>
+                                        <tr><td>Keterlibatan</td><td>5</td></tr>
+                                        <tr><td>Humor</td><td>5</td></tr>
+                                        <tr><td>Wawasan/Insight</td><td>5</td></tr>
+                                        <tr class="font-bold bg-indigo-50"><td>Total</td><td>20/20 (100%)</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600"><strong>Alasan singkat:</strong> Narasi sangat jujur dan autentik. Cerita "plot-twist" masuk ITB sangat menarik. Wawasan diri yang kuat tentang pilihan jurusan dan kepribadian sosialnya.</p>
+                            <p class="mt-2 text-sm text-red-500"><strong>Saran perbaikan:</strong> Paragraf "Pertemanan Saya" dapat dihubungkan kembali ke kekuatan SHAPE (misal: empati) agar lebih terintegrasi.</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-indigo-600 mb-4">UTS-2 — My Songs for You</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full score-table">
+                                    <thead><tr><th>Kriteria</th><th>Skor (Maks. 5)</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Orisinalitas (Karya Tulis)</td><td>5</td></tr>
+                                        <tr><td>Keterlibatan</td><td>5</td></tr>
+                                        <tr><td>Gaya/Persona</td><td>5</td></tr>
+                                        <tr><td>Inspirasi</td><td>5</td></tr>
+                                        <tr class="font-bold bg-indigo-50"><td>Total</td><td>20/20 (100%)</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600"><strong>Alasan singkat:</strong> Karya sastra yang sangat mendalam dan orisinal. Metafora "batu" dan "laut" dieksekusi dengan indah. Menunjukkan kedalaman emosi dan inspirasi yang kuat.</p>
+                            <p class="mt-2 text-sm text-red-500"><strong>Saran perbaikan:</strong> Tambahkan 1-2 kalimat refleksi pribadi yang menjelaskan mengapa metafora ini dipilih, untuk mengaitkannya dengan pengalaman di UTS-3.</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-indigo-600 mb-4">UTS-3 — My Stories For You</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full score-table">
+                                    <thead><tr><th>Kriteria</th><th>Skor (Maks. 5)</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Orisinalitas</td><td>5</td></tr>
+                                        <tr><td>Keterlibatan</td><td>5</td></tr>
+                                        <tr><td>Keautentikan</td><td>5</td></tr>
+                                        <tr><td>Inspirasi</td><td>5</td></tr>
+                                        <tr class="font-bold bg-indigo-50"><td>Total</td><td>20/20 (100%)</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600"><strong>Alasan singkat:</strong> Cerita sangat personal (kehilangan) dan autentik. Menunjukkan proses *sense-making* (pencarian makna) yang matang. Prinsip "Everything happens for a reason" sangat kuat.</p>
+                            <p class="mt-2 text-sm text-green-600"><strong>Saran perbaikan:</strong> Teks sudah sangat kuat. Tidak ada saran perbaikan mayor, mungkin hanya perlu memastikan alur cerita tetap kohesif.</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-indigo-600 mb-4">UTS-4 — My SHAPE</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full score-table">
+                                    <thead><tr><th>Kriteria</th><th>Skor (Maks. 5)</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Orisinalitas</td><td>5</td></tr>
+                                        <tr><td>Keterlibatan</td><td>5</td></tr>
+                                        <tr><td>Keautentikan</td><td>5</td></tr>
+                                        <tr><td>Inspirasi</td><td>5</td></tr>
+                                        <tr class="font-bold bg-indigo-50"><td>Total</td><td>20/20 (100%)</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600"><strong>Alasan singkat:</strong> Analisis SHAPE paling komprehensif. "Sintesis Diri" dan "Identitas Naratif" adalah puncak refleksi yang melampaui ekspektasi tugas.</p>
+                            <p class="mt-2 text-sm text-red-500"><strong>Saran perbaikan:</strong> Pertimbangkan membuat visualisasi/diagram ringkas dari 5 poin SHAPE untuk membantu pembaca mencerna data yang padat.</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-indigo-600 mb-4">UTS-5 — My Personal Reviews</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full score-table">
+                                    <thead><tr><th>Kriteria</th><th>Skor (Maks. 5)</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Pemahaman Konsep</td><td>5</td></tr>
+                                        <tr><td>Analisis Kritis</td><td>5</td></tr>
+                                        <tr><td>Argumentasi (Logos)</td><td>5</td></tr>
+                                        <tr><td>Etos & Empati</td><td>5</td></tr>
+                                        <tr><td>Rekomendasi</td><td>5</td></tr>
+                                        <tr class="font-bold bg-indigo-50"><td>Total</td><td>25/25 (100%)</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600"><strong>Alasan singkat:</strong> (Penilaian ini) Menunjukkan pemahaman utuh terhadap rubrik dan proses refleksi. Pendekatan sistematis dengan etika penilaian yang seimbang.</p>
+                            <p class="mt-2 text-sm text-green-600"><strong>Saran perbaikan:</strong> (Tugas ini sudah selesai dan memenuhi semua kriteria rubrik dengan sangat baik.)</p>
+                        </div>
+
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Rekap Skor (Ringkas)</h2>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full score-table">
+                            <thead class="bg-indigo-600 text-white">
+                                <tr>
+                                    <th class="rounded-tl-lg">Tugas</th>
+                                    <th>Skor</th>
+                                    <th class="rounded-tr-lg">Persentase</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>UTS-1</td><td>20/20</td><td>100%</td></tr>
+                                <tr><td>UTS-2</td><td>20/20</td><td>100%</td></tr>
+                                <tr><td>UTS-3</td><td>20/20</td><td>100%</td></tr>
+                                <tr><td>UTS-4</td><td>20/20</td><td>100%</td></tr>
+                                <tr class="font-bold bg-yellow-50"><td>UTS-5</td><td>25/25</td><td>100%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Langkah Perbaikan Cepat (Prioritas 1 Minggu)</h2>
+                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-700 ml-4">
+                        <li>Integrasikan saran-saran minor di atas (menghubungkan UTS-1 ke SHAPE, dan UTS-2 ke UTS-3).</li>
+                        <li>Tambahkan visualisasi ringkas untuk halaman SHAPE (UTS-4) agar lebih mudah dicerna.</li>
+                        <li>Pastikan navigasi antar halaman (tautan langsung) sudah intuitif dan seragam.</li>
+                    </ul>
+                </section>
+                
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 text-center" role="contentinfo">
+        <p class="text-sm text-gray-400">&copy; 2024 Stephanie Mae. All rights reserved.</p>
+    </footer>
+
+    </body>
+</html>
